@@ -8,7 +8,6 @@ call plug#begin()
     Plug 'nvim-treesitter/nvim-treesitter-context'
 
     Plug 'hrsh7th/cmp-emoji'
-    Plug 'sschneemelcher/cmp-treesitter'
     Plug 'hrsh7th/nvim-cmp'
 
     Plug 'nvim-lua/plenary.nvim'
@@ -18,6 +17,8 @@ call plug#begin()
     Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 
     Plug 'folke/twilight.nvim'
+
+    Plug 'sschneemelcher/treels'
 call plug#end()
 
 colorscheme catppuccin-mocha
@@ -105,7 +106,7 @@ cmp.setup({
     }),
   sources = {
     { name = 'emoji' },
-    { name = 'treesitter' },
+    { name = 'treels' },
   },
 })
 
